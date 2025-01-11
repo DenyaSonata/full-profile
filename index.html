@@ -1,9 +1,39 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Full Profile</title>
+    <link rel="icon" href="https://i.imgur.com/gmodZCU.png" type="image/png"">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Kesalahan 404: Halaman tidak ditemukan</h1>
-    <p>I'm still working on this site, so mohon bersabar yah <3</p>
-    <a href="https://denyasonata.github.io">Klik disini untuk kembali ke situs utama :D</a>
+    <section id="head">
+        <div class="dropdown" style="justify-content: center; width: 100%;">
+            <button onclick="dropdownFunc()" class="dropbtn" style="float: left;">
+                <i class="fa fa-navicon"></i>
+            </button>
+            <div id="dropdownID" class="dropdown-content">
+                <a href="https://denyasonata.github.io">Home</a>
+                <a href="PAOAW" target="_blank">PAOAW</a>
+            </div>
+            <a href="#home" class="phead" style="color: white; padding: 18px 24px;">Biodata</a>
+            <a href="https://www.instagram.com/dhenyash/" target="_blank" class="social" id="instagram">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61552469131463" target="_blank" class="social" id="facebook">Facebook</a>
+            <script src="js/dropdown.js"></script>
+            <script src="js/header-socials.js"></script>    
+        </div>
+        <script src="js/sticky-header.js"></script>
+    </section>
+    <section id="home">
+        <div class="container">
+            <div class="profile-header">
+                <img src="https://i.pinimg.com/736x/a5/0b/b8/a50bb883b73e6926c92b29943a331e79.jpg" class="profile-pic">
+                <div class="profile-info">
+                    <h1 style="font-size: xx-large;">Dhenias Syafe'i Suryawijaya</h1>
+                    <a href="https://smkn2cikbar.sch.id/web/identitas/" target="_blank">SMKN 2 Cikarang Barat - Jurusan Animasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+</html>
