@@ -230,12 +230,11 @@ body {
 }
 .skill-bar {
     width: 90%;
-    height: 20px;
     background-color: #ffffff60;
     border-radius: 32px;
 }
 .skill {
-    text-align: left;
+    text-align: right;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 32px;
@@ -243,7 +242,7 @@ body {
 }
 .draw {
     width: 75%;
-    background-color: cyan;
+    background-color: blueviolet;
 }
 .lua {
     width: 80%;
@@ -255,9 +254,44 @@ body {
 }
 .design {
     width: 60%;
-    background-color: skyblue;
+    background-color: cornflowerblue;
+}
+.rowimg {
+    display: flex;
+    max-height: 0;
+    flex-wrap: wrap;
+    transition: max-height .2s ease-out;
+    justify-content: center;
+    padding: 0 4px;
+}
+.colimg {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+.colimg img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform .2s;
+    width: 100%;
+}
+.colimg img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
+@media screen and (max-width: 1000px) {
+    .colimg {
+        flex: 30%;
+        max-width: 30%;
+    }
+    .colimg img:hover {
+        -ms-transform: scale(1.865);
+        -webkit-transform: scale(1.865);
+        transform: scale(1.865);
+    }
+}
 @media screen and (max-width: 800px) {
     .dropdown-content {
         min-width: none;
@@ -280,5 +314,25 @@ body {
     }
     .col {
         width: 100%;
+    }
+    .colimg {
+        flex: 40%;
+        max-width: 40%;
+    }
+    .colimg img:hover {
+    -ms-transform: scale(1.075);
+    -webkit-transform: scale(1.075);
+    transform: scale(1.075);
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 85%;
+        max-width: 85%;
+    }
+    .column img:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
     }
 }
