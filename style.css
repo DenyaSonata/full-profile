@@ -34,6 +34,7 @@ body {
     transition: transform .2s;
 }
 .thead {
+    display: inline-block;
     color: #ffffff90;
     text-decoration: none;
     padding: 30px 20px;
@@ -187,6 +188,14 @@ body {
     height: 25px;
     padding: 20px;
     border: #ffffff00;
+}
+.fa-info-circle {
+    background: #00000000;
+    color: white;
+}
+.fa-photo {
+    background: #00000000;
+    color: white;
 }
 .fa-facebook {
     background: #00000000;
